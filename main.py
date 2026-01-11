@@ -53,7 +53,7 @@ client = razorpay.Client(auth=(RZP_KEY_ID, RZP_KEY_SECRET))
 def create_order(payload: dict):
     email = payload["email"]
     order = client.order.create({
-        "amount": 1000,
+        "amount": 100,
         "currency": "INR",
         "payment_capture": 1
     })
